@@ -4,39 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Re-Imagine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
-    <a href="practise1.html">Practise1</a>
-    <a href="practise2.html">Practise2</a>
-    <a href="practise3.html">Practise3</a>
-    <a href="practise4.html">Practise4</a>
-    <a href="practise5.html">Practise5</a>
-    <a href="samsung.html">Samsung</a>
+    <nav>
+        <div class="first-nav"><h2>Alpha</h2></div>
+        <div class="second-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Resume</a>
+            <a href="#" class="btn">Contact</a>
+            <a class="ri-menu-2-fill icon"></a>
+        </div>
+    </nav>
+    <main>
+        <div class="page1">
+            <div class="contents">
+                <div class="head-p">
+                    <p>👋Hi, my name is Abhijit and I am a</p>
+                </div>
+                <h2>Webdesigner<br>
+                & Developer</h2>
+                <div class="foot-p">
+                    <p>based in Hazaribagh, Jharkhand</p>
+                </div>
+            </div>
+        </div>
+        <div class="page2">
+            <a href="practise1.html">Practise1<span>Projects</span></a>
+            <a href="practise2.html">Practise2<span>Projects</span></a>
+            <a href="practise3.html">Practise3<span>Projects</span></a>
+            <a href="practise4.html">Practise4<span>Projects</span></a>
+            <a href="practise5.html">Practise5<span>Projects</span></a>
+            <a href="samsung.html">Samsung<span>Projects</span></a>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
-<style>
-    *{
-        font-family: samsung;
-    }
-    @font-face {
-    font-family: samsung;
-    src: url(fonts/samsungsharpsans-medium_v2.ttf);
-}
-    a{
-        text-decoration: none;
-        background-color: #222;
-        color: #f2f2f2;
-        padding: 0.7rem 2rem;
-        border-radius: 0.5rem;
-        width: 10%;
-        border: none;
-        display: block;
-        margin-top: 1rem;
-        display: grid;
-        place-items: center;
-    }
-    a:nth-child(6){
-        background-color: #444;
-        text-transform: uppercase;
-    }
-</style>
 </html>

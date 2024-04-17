@@ -1,4 +1,8 @@
 @font-face {
+    font-family: dm;
+    src: url(fonts/Dm\ sans\ 9pt.ttf);
+}
+@font-face {
     font-family: samsung;
     src: url(fonts/samsungsharpsans-medium_v2.ttf);
 }
@@ -12,151 +16,124 @@ html, body{
     width: 100%;
     font-family: samsung;
 }
+body{
+    background-color: #f2f2f2;
+}
 nav{
-    /* background-color: cadetblue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 8vw;
-    display: flex;
-    align-items: center;
+    background-color: transparent;
     width: 100%;
-    position: absolute;
+    height: 3.5rem;
+    padding: 0 5vw;
+    border-bottom: 1px solid #222;
 
-    & a{
-        text-decoration: none;
+    & .first-nav h2{
         color: #222;
-        font-family: samsung;
-        color: #fefefe;
-    }
-    & .first-nav{
-        display: flex;
-        gap: 3rem;
+        letter-spacing: 0.1rem;
     }
     & .second-nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
-    }
-    & .second-nav a{
-        font-size: 1.5rem;
-    }
+        gap: 1.5rem;
 
+        & a{
+            text-decoration: none;
+            color: #222;
+            font-size: 0.9rem;
+        }
+        & .btn{
+            background-color: #222;
+            color: #fff;
+            padding: 0.4rem 1rem;
+            border-radius: 0.3rem;
+        }
+        & .btn:hover{
+            background-color: #333;
+        }
+        & .icon{
+            font-size: 1.5rem;
+            display: none;
+        }
+    }
+}
+main{
+    width: 100%;
 }
 .page1{
-    background: linear-gradient(90deg, rgb(48, 46, 47) 0%, rgba(25,25,25,1) 50%);
-    height: 100vh;
-    width: 100%;
-    padding: 0 8vw;
+    height: 93.6vh;
+    width: 100vw;
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-wrap: wrap;
 
-    & .image{
-        height: 70%;
-        width: 500px;
-        /* background-color: #47a85c; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-    }
-    & .content{
-        height: 90%;
+    & .contents{
         width: 60%;
-        /* background-color: #0f511e; */
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 2rem;
 
+        & .head-p{
+            width: 100%;
+        }
         & h2{
-            color: #F8F8F8;
-            font-size: 5rem;
-            line-height: 5rem;
+            font-weight: 900;
+            font-size: 8vw;
+            text-align: center;
+            line-height: 8vw;
         }
-        & h2 span{
-            color: #7B7895;
-        }
-        & p{
-            font-size: 0.9rem;
-            color: #F8F8F8;
-            width: 80%;
-            letter-spacing: 0.03rem;
-        }
-        & .buttons{
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-         
-            & button{
-                font-size: 1.2rem;
-                border: none;
-                padding: 0.8rem 4rem;
-                color: #dfdfdf;
-                cursor: pointer;
-                border-radius: 2rem;
-                background: linear-gradient(90deg, rgba(168,170,208,1) 0%, rgba(77,76,115,1) 56%);
-            }
-            &  a{
-                font-size: 1.2rem;
-                text-decoration: none;
-                color: #fefefe;
-                border: 2px solid #fff;
-                padding: 0.55rem 1.5rem;
-                border-radius: 2rem;
-            }
+        & .foot-p{
+            width: 100%;
+            text-align: end;
         }
     }
 }
-
 .page2{
     height: 100vh;
     width: 100%;
-    background-color: #C1BDBC;
+    padding: 7vw 5vw;
     display: flex;
-    
-    & .image{
-        height: 100%;
-        width: 65%;
-        background-image: url(https://www.samsung.com/global/galaxy/galaxy-buds-pro/images/galaxy-buds-pro-noise-cancel-model_v2.png);
-        background-position: center;
-        background-size: cover;
-    }
-    & .content{
-        height: 100%;
-        width: 35%;
-        /* background-color: goldenrod; */
-        padding: 0 5vw 0 0;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2.5rem;
-        margin-left: -3vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 
-        & h2{
-            font-size: 4rem;
-            line-height: 4rem;
-            margin-left: -13vw;
-            
-        }
-        & button{
-            width: 4rem;
-            height: 4rem;
-            font-size: 2rem;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            background: none;
-            border: 2px solid #fff;
-            color: #fff;
-            transition: all 0.3s ease;
-        }
-        & button:hover{
-            color: #222;
-        }
+    & a{
+        text-decoration: none;
+        background-color: #222;
+        color: #f2f2f2;
+        padding: 2rem 2rem;
+        border-radius: 0.5rem;
+        width: 600px;
+        height: 20%;
+        border: none;
+        display: block;
+        margin-top: 1rem;
+        display: grid;
+        place-items: center;
+        transition: all 0.3s ease;
+        font-size: 1.5rem;
+        position: relative;
     }
-
+    & a span{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0.5rem 0.5rem 0.4rem 0.5rem;
+        font-size: 1rem;
+        border-bottom-left-radius: 0.4rem;
+        border-top-right-radius: 0.4rem;
+        background-color: #9a0101;
+    }
+    & a:hover{
+        scale: 0.97;
+        background-color: #333;
+    }
+    & a:nth-child(6){
+        background-color: #444;
+    } 
 }

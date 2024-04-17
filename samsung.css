@@ -1,0 +1,162 @@
+@font-face {
+    font-family: samsung;
+    src: url(fonts/samsungsharpsans-medium_v2.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: samsung;
+}
+nav{
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 8vw;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+
+    & a{
+        text-decoration: none;
+        color: #222;
+        font-family: samsung;
+        color: #fefefe;
+    }
+    & .first-nav{
+        display: flex;
+        gap: 3rem;
+    }
+    & .second-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    & .second-nav a{
+        font-size: 1.5rem;
+    }
+
+}
+.page1{
+    background: linear-gradient(90deg, rgb(48, 46, 47) 0%, rgba(25,25,25,1) 50%);
+    height: 100vh;
+    width: 100%;
+    padding: 0 8vw;
+    display: flex;
+    align-items: center;
+    text-wrap: wrap;
+
+    & .image{
+        height: 70%;
+        width: 500px;
+        /* background-color: #47a85c; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    & .content{
+        height: 90%;
+        width: 60%;
+        /* background-color: #0f511e; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+
+        & h2{
+            color: #F8F8F8;
+            font-size: 5rem;
+            line-height: 5rem;
+        }
+        & h2 span{
+            color: #7B7895;
+        }
+        & p{
+            font-size: 0.9rem;
+            color: #F8F8F8;
+            width: 80%;
+            letter-spacing: 0.03rem;
+        }
+        & .buttons{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+         
+            & button{
+                font-size: 1.2rem;
+                border: none;
+                padding: 0.8rem 4rem;
+                color: #dfdfdf;
+                cursor: pointer;
+                border-radius: 2rem;
+                background: linear-gradient(90deg, rgba(168,170,208,1) 0%, rgba(77,76,115,1) 56%);
+            }
+            &  a{
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: #fefefe;
+                border: 2px solid #fff;
+                padding: 0.55rem 1.5rem;
+                border-radius: 2rem;
+            }
+        }
+    }
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #C1BDBC;
+    display: flex;
+    
+    & .image{
+        height: 100%;
+        width: 65%;
+        background-image: url(https://www.samsung.com/global/galaxy/galaxy-buds-pro/images/galaxy-buds-pro-noise-cancel-model_v2.png);
+        background-position: center;
+        background-size: cover;
+    }
+    & .content{
+        height: 100%;
+        width: 35%;
+        /* background-color: goldenrod; */
+        padding: 0 5vw 0 0;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
+        margin-left: -3vw;
+
+        & h2{
+            font-size: 4rem;
+            line-height: 4rem;
+            margin-left: -13vw;
+            
+        }
+        & button{
+            width: 4rem;
+            height: 4rem;
+            font-size: 2rem;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        & button:hover{
+            color: #222;
+        }
+    }
+
+}
