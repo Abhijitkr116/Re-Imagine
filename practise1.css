@@ -1,0 +1,220 @@
+@font-face {
+    font-family: dm;
+    src: url(Fonts/Dm\ sans\ 9pt.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: dm;
+}
+nav{
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3vw;
+}
+.nav-first, .nav-third{
+    width: 20%;
+}
+nav .nav-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav .nav-second a{
+    text-decoration: none;
+    color: black;
+}
+.nav-third{
+    text-align: end;
+}
+.nav-third i{
+    font-size: 1.3rem;
+}
+main{
+    width: 100%;
+    padding: 2vh 3vw;
+}
+.page1{
+    width: 100%;
+    height: 85vh;
+    border-radius: 1rem;
+    background-image: url('https://images.pexels.com/photos/38326/pexels-photo-38326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6vh 3vw;
+}
+.page1 .contents{
+    /* background-color: lightpink; */
+    width: 70%;
+    padding: 3vw 0;
+}
+.page1 .contents h2{
+    font-size: 6vw;
+    line-height: 6.2vw;
+    color: #fff;
+}
+.page1 .contents p{
+    font-size: 1.3vw;
+    margin-top: 1rem;
+    color: #fff;
+}
+.page1 .contents button{
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border: none;
+    padding: 0.7rem 2.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.page1 .buttons{
+    /* background-color: red; */
+}
+.page1 .buttons i{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 0.3rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.page1 .buttons i:hover{
+    color: #222;
+    background-color: #fff;
+}
+
+
+/* Page2 */
+.page2 .top-values{
+    width: 100%;
+    /* height: 50vh; */
+    /* background-color: #9c6b6b; */
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.top-values .contents h2{
+    /* background-color: green; */
+    text-align: center;
+    font-size: 4vw;
+}
+.top-values .contents p{
+    /* background-color: greenyellow; */
+    text-align: center;
+    font-size: 1rem;
+    
+}
+.top-values .services{
+    width: 100%;
+    height: 20vh;
+    /* background-color: hotpink; */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+.top-values .service{
+    width: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    /* background-color: aquamarine; */
+}
+.top-values .service i{
+    font-size: 1.6rem;
+    background-color: rgb(211, 210, 210);
+    padding: 0.4rem 0.5rem;
+    border-radius: 50%;
+}
+.top-values .service h3{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+.top-values .service p{
+    font-size: 0.7rem;
+}
+
+.page2 .tour{
+    /* background-color: green; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+}
+.page2 .tour h2{
+    font-size: 3.5vw;
+    padding: 0 3rem;
+}
+.page2 .tour .tour-in{
+    width: 100%;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.9rem;
+    margin-top: 2rem;
+
+}
+.page2 .tour .tour-in .tours{
+    width: 20%;
+    /* background-color: rgb(145, 224, 70); */
+    border-radius: 0.8rem;
+    border: 1px solid #9a9a9a;
+}
+.tour-in .tours .image{
+    height: 30vh;
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+.tours p{
+    padding: 0 0.5rem;
+    /* background-color: red; */
+}
+
+.tours .price-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    /* padding: 0 0.5rem; */
+}
+.price-btn p{
+    font-size: 0.9rem;
+}
+.price-btn i{
+    font-size: 1.4rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.1rem 0.15rem;
+    margin-right: 0.5rem;
+    transition: all 0.4s ease;
+}
+.price-btn i:hover{
+    color: #fff;
+    background-color: #222;
+    cursor: pointer;
+}
