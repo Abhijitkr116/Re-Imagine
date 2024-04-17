@@ -1,6 +1,6 @@
 @font-face {
     font-family: samsung;
-    src: url(Fonts/samsungsharpsans-medium_v2.ttf);
+    src: url(fonts/samsungsharpsans-medium_v2.ttf);
 }
 *{
     margin: 0;

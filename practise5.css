@@ -1,10 +1,10 @@
 @font-face {
     font-family: samsung;
-    src: url(Fonts/samsungsharpsans-medium_v2.ttf);
+    src: url(fonts/samsungsharpsans-medium_v2.ttf);
 }
 @font-face {
     font-family: dm;
-    src: url(Fonts/Dm\ sans\ 9pt.ttf);
+    src: url(fonts/Dm\ sans\ 9pt.ttf);
 }
 *{
     margin: 0;
