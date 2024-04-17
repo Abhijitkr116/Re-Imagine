@@ -1,0 +1,229 @@
+@font-face {
+    font-family: samsung;
+    src: url(Fonts/samsungsharpsans-medium_v2.ttf);
+}
+@font-face {
+    font-family: dm;
+    src: url(Fonts/Dm\ sans\ 9pt.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    min-width: 400px;
+    width: 100%;
+    height: 100%;
+    background-color: #0E0516;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    /* z-index: 100; */
+}
+.scales{
+    width: 100%;
+    height: 100%;
+    /* background-color: #0E0516; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    /* z-index: 101; */
+
+    & .scale1{
+        margin-top: 4rem;
+        height: 45%;
+        width: 40%;
+        background: linear-gradient(115deg, rgba(251,166,123,1) 0%, rgba(226,161,166,1) 24%, rgba(163,79,239,1) 100%);
+        opacity: 60%;
+        border-radius: 1rem;
+        opacity: 30%;
+    }
+    /* & .scale2{
+        height: 5%;
+        width: 50%;
+        background: linear-gradient(240deg, rgba(251,166,123,1) 0%, rgba(226,161,166,1) 6%, rgba(163,79,239,1) 85%);
+        opacity: 70%;
+        border-radius: 1rem;
+    }
+    & .scale3{
+        height: 10%;
+        width: 20%;
+        background: linear-gradient(115deg, rgba(251,166,123,1) 0%, rgba(226,161,166,1) 24%, rgba(163,79,239,1) 100%);
+        opacity: 80%;
+        border-radius: 1rem;
+        transform: rotate(90deg);
+        position: absolute;
+        right: 25%;
+        bottom: 45%;
+    } */
+}
+
+
+.box1{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    
+    & .card{
+        height: 270px;
+        width: 250px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.8px);
+        -webkit-backdrop-filter: blur(7.8px);
+        border: 3px solid transparent;
+        padding: 0.3rem;
+        transition: all 0.3s ease;
+    
+    
+        & .button1{
+            /* background-color: red; */
+            display: grid;
+            place-items: end;
+        }
+        & .button1 button{
+            border: none;
+            background-color: #90FACA;
+            font-size: 0.5rem;
+            font-weight: 600;
+            padding: 0.1rem 0.2rem;
+            border-radius: 0.3rem;
+            text-align: end;
+            text-transform: uppercase;
+        }
+        & .content1{
+            /* background-color: rgba(240, 128, 128, 0.462); */
+            color: #EDF0E9;
+            /* padding-right: 2rem; */
+            padding: 0 0.8rem;
+            padding-right: 2rem;
+        }
+        & .content1 h3{
+            font-weight: 500;
+            font-size: 1.3rem;
+        }
+        & .content1 p{
+            font-size: 0.7rem;
+            line-height: 0.9rem;
+            font-weight: 200;
+            margin-top: 0.2rem;
+            letter-spacing: 0.02rem;
+        }
+        & .content2{
+            /* background-color: rgba(240, 128, 128, 0.462); */
+            color: #EDF0E9;
+            /* padding-right: 2rem; */
+            margin-top: 2rem;
+            padding: 0 0.8rem;
+        }
+        & .content2 h2{
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+        & .content2 p{
+            font-size: 0.7rem;
+            line-height: 0.9rem;
+            font-weight: 200;
+            margin-top: 0.2rem;
+            letter-spacing: 0.02rem;
+        }
+        & .button2{
+            padding: 0 0.8rem;
+            width: 100%;
+            margin-top: 2rem;
+        }
+        & .button2 button{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border: none;
+            padding: 0.5rem 0.8rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid #fff;
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+    .card:hover{
+        border: 3px solid rgba(255, 255, 255, 0.35);
+        background: #90faca2c;
+        & .button2 button{
+            background-color: #90FACA;
+            color: #222;
+            cursor: pointer;
+            border: 2px solid #90FACA;
+        } 
+    }
+}
+
+.box2{
+    display: flex;
+    gap: 1rem;
+
+
+    .cards{
+        width: 250px;
+        /* height: 150px; */
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.8px);
+        color: #fff;
+        padding: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        & h2{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        & p{
+            font-size: 0.7rem;
+            line-height: 0.9rem;
+            font-weight: 200;
+            margin-top: 0.2rem;
+            letter-spacing: 0.02rem;
+        }
+        & .button{
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            margin-top: 0.5rem;
+            gap: 0.8rem;
+        }
+        & .button p{
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+        & .button i{
+            font-size: 0.8rem;
+            border: 1px solid #fff;
+            padding: 0.1rem 0.9rem;
+            border-radius: 1rem;
+            
+        }
+    }
+
+    & .cards:hover{
+        background: rgba(255, 255, 255, 0.2)
+    }
+}

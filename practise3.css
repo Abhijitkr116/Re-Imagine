@@ -1,0 +1,201 @@
+@font-face {
+    font-family: dm;
+    src: url(Fonts/Dm\ sans\ 9pt.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: dm;
+}
+main, .page1, .page2{
+    height: 100%;
+    width: 100%;
+}
+.page1, .page2{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 5vw;
+}
+.box{
+  height: 300px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: green;
+  position: relative;
+}
+.box img{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.box::before{
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  right: 0;
+  bottom: 60px;
+  z-index: 1;
+  box-shadow: 13px 13px #fff;
+}
+.box::after{
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 60px;
+  bottom: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 13px 13px #fff;
+}
+
+
+.gola{
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid white;
+  bottom: 0px;
+  right: 0px;
+  display: grid;
+  place-items: center;
+  background-color: chocolate;
+  z-index: 9;
+}
+.gola i{
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.circle{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-color: #fff;
+  border-top-left-radius: 50%;
+  bottom: 0px;
+  right: 0px;
+}
+/* https://images.pexels.com/photos/1162983/pexels-photo-1162983.jpeg
+https://images.pexels.com/photos/8101522/pexels-photo-8101522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+.content{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.content>h2{
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  color: #222;
+}
+.content>p{
+  color: #444;
+}
+.content button{
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.content .buttons button:nth-child(1){
+  background-color: #EBCFA7;
+}
+.content .buttons button:nth-child(2){
+  background-color: #B4C8AD;
+}
+
+
+
+
+
+
+  .card-wrapper{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: rgb(228, 0, 0); */
+    border-radius: 20px;
+    /* border: 1px solid black; */
+
+    & .gola{
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 2px solid white;
+      bottom: 6px;
+      right: 6px;
+      display: grid;
+      place-items: center;
+      background-color: #000000;
+      z-index: 9;
+    }
+    & .gola i{
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    & .card{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    & .card::before{
+      content: '';
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      right: 0;
+      bottom: 70px;
+      z-index: 1;
+      box-shadow: 13px 13px #fff;
+    }
+    & .card::after{
+      content: '';
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      right: 70px;
+      bottom: 0;
+      z-index: 1;
+      box-shadow: 13px 13px #fff;
+    }
+    & .card img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      /* z-index: 0; */
+      border-radius: 20px;
+    }
+    & .boxi{
+      width: 70px;
+      height: 70px;
+      /* border: 2px solid; */
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: #ffffff;
+      border-top-left-radius: 50%;
+      z-index: 1;
+    }
+  }

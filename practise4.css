@@ -1,0 +1,157 @@
+@font-face {
+    font-family: samsung;
+    src: url(Fonts/samsungsharpsans-medium_v2.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    min-width: 400px;
+    width: 100%;
+    background-color: #FEE0A9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 7vw 12vw;
+    gap: 1rem;
+}
+.card-wrapper{
+    height: 330px;
+    width: 280px;
+    background-color: #fff;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+.card{
+    height: 80%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #f8f4ff;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &   .price-save{
+            /* background-color: #dc9898; */
+            display: flex;
+            justify-content: space-between;
+        }
+    &   .price-save p{
+            font-size: 0.9rem;
+        }
+    &   .price-save i{
+            font-size: 1.3rem;
+        }
+    &   .job-role{
+            /* background-color: #e33939; */
+            display: flex;
+            justify-content: space-between;
+            height: 80%;
+        }
+    &   .role-circle .circles{
+            width: 50%;
+            height: 10%;
+            /* background-color: #FEE0A9; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            padding-left: 1.3rem;
+        }
+    &   .circles .dot:nth-child(1){
+            background-color: #222;
+        }
+    &   .circles .dot{
+            height: 0.4rem;
+            width: 0.4rem;
+            background-color: #979797;
+            border-radius: 50%;
+        }
+    &   .role-circle{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        } 
+    &   .job-role h2{
+            font-weight: 300;
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            /* background-color: #bc9fed; */
+        }
+    &   .job-role i{
+            font-weight: 100;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
+.content{
+    height: 20%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+
+    & .logos{
+        height: 100%;
+        width: 70%;
+        /* background-color: lightgreen; */
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        gap: 0.5rem;
+    }
+    & .logos .image{
+        height: 100%;
+        width: 37%;
+        padding: 0.2rem;
+        /* background-color: #e9e9e9; */
+    }
+    & .logos .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    & .logos h3{
+        font-weight: 500;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    & .btn{
+        /* background-color: red; */
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    & .btn button{
+        font-size: 0.8rem;
+        padding: 0.4rem 0.7rem;
+        border-radius: 1rem;
+        border: none;
+        background-color: #222;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.1s ease;
+    }
+    & .btn button:hover{
+        background-color: #333;
+    }
+}
+
+i{
+    cursor: pointer;
+}
