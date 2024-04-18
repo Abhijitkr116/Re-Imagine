@@ -28,6 +28,9 @@ nav{
     height: 3.5rem;
     padding: 0 4vw;
     border-bottom: 1px solid #222;
+    position: relative;
+    z-index: 15;
+    transition: all 0.3s ease;
 
     & .first-nav h2{
         color: #222;
@@ -60,6 +63,36 @@ nav{
             cursor: pointer;
         }
     }
+    .responsive-nav{
+        /* display: none; */
+        position: absolute;
+        width: 100%;
+        /* height: 40vw; */
+        top: 3rem;
+        left: -100%;
+        padding: 1rem 4vw;
+        gap: 1rem;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #222;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        transition: all 0.4s ease;
+
+        & a{
+            text-decoration: none;
+            /* color: #fff; */
+            font-size: 0.9rem;
+            background-color: #222;
+            color: #f2f2f2;
+            /* background-color: #f2f2f2;
+            color: #222; */
+            padding: 0.4rem 0;
+            text-align: center;
+            border-radius: 0.3rem;
+            width: 30%;
+        }
+    }
 }
 main{
     width: 100%;
@@ -72,6 +105,7 @@ main{
     align-items: center;
     position: relative;
     z-index: 10;
+    overflow: hidden;
 
 
     & .contents{
@@ -421,6 +455,12 @@ main{
 
 @media all and (max-width: 600px){
     nav{
+        height: 3rem;
+
+        & .first-nav h2{
+            font-size: 1.2rem;
+            letter-spacing: 0.1;
+        }
 
         & .second-nav{
             
