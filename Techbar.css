@@ -1,0 +1,33 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+header{
+    background-image: linear-gradient(180deg, #c4b6fd, #93acfc);
+}
+.navbar-brand{
+    color: #0a58ca !important;
+}
+.nav-link{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.btn{
+    background-color: #0B5ED7 !important;
+}
+.btn:hover{
+    background-color: #256fde !important;
+}
+.icons{
+    height: 32px;
+    width: 32px;
+    padding: 6px;
+    color: #0a58ca;
+    background-color: #f2f2f2;
+    margin-bottom: 16px;
+}
+
+.nav-tab .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border: none !important;
+    background-color: #0a58ca;
+    color: white;
+}
