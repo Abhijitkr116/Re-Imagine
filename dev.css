@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #000000;
+    font-family: "Lato", "Ubuntu";
+}
+.page1 .container{
+    margin-top: 10vw;
+}
+.content1{
+    padding-right: 10vw;
+}
+.content1 button{
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    padding: 0.7rem 2rem;
+    background: #fff;
+    border: none;
+    margin-top: 1.4rem;
+    font-weight: 600;
+} 
+nav .getm{
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    background: none;
+    color: #fff;
+    border: 2px solid white;
+    font-weight: 600;
+} 
+
+.groups .row{
+    margin-top: 8vw;
+}
+.groups .col-md-3{
+    height: 35vw;
+    width: 25%;
+    border-top-left-radius: 30rem;
+    border-top-right-radius: 5rem;
+    transition: all 0.3s ease;
+    transform: translateX(100px);
+    opacity: 0;
+}
+.groups img{
+    height: 100%;
+    border-top-left-radius: 30rem;
+    border-top-right-radius: 5rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.groups .col-md-3:hover{
+    border-top-left-radius: 5rem;
+    transform: translateY(-4rem);
+}
+.groups .col-md-3:hover img{
+    border-top-left-radius: 5rem;
+    margin-top: 5rem;
+}
+.groups .row .para{
+    top: 20%;
+    width: 95%;
+    text-align: center;
+    font-size: 1.8vw;
+    line-height: 1.2rem;
+    color: #fff;
+}
+.groups .row .para span{
+    font-size: 1vw;
+}
+.groups .col-md-3:hover .para{
+    top: 3%;
+
+}
